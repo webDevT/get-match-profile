@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Dating in telegram">
+	<title>Flirtu</title>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<div class="content">
+	<div class="profile-header profile-header--answer">
+		<div class="container">
+			<div class="header-logo">
+			Flirtu
+			<img src="img/heart.png" alt="heart" width="23" height="16">
+		</div>
+ 
+		<img src="img/del.png" alt="trush" class="delete" id="delete" width="16" height="18">
+		</div>
+		
+	
+	</div>
+
+	<div class="profile-content profile-content--answer">
+		<form id="change-form" action="." method="POST">
+		<div class="answer-content">
+			<div class="container">
+				<div class="question">
+					Describe yourself
+				</div>
+
+
+				
+
+
+			</div>
+			
+			<div class="questions-list questions-list--answer">
+		
+				<div class="questions-item">
+					<div class="container">
+
+						<textarea name="" id="" cols="30" rows="10" class="textarea" placeholder="Add your answer"></textarea>
+					</div>
+				</div>
+	
+				
+	
+			
+			
+		
+			
+		</div>
+
+		</div>
+		<div class="profile-buttons">
+			<div class="container">
+				<a href="your-profile.html" class="button">
+					Cancel
+				</a>
+				<a href="your-profile.html" class="button button--blue">
+					Done
+				</a>
+			</div>
+		</div>
+		</form>
+
+
+	</div>
+
+	
+	
+</div>
+
+<div class="modal" id="modal">
+	<div class="modal-content">
+		<div class="modal-title">
+			Delete question
+		</div>
+
+		<div class="profile-buttons">
+				<a href="your-profile.html" class="button">
+					Cancel
+				</a>
+				<a href="your-profile.html" class="button button--red">
+					Done
+				</a>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	document.getElementById('delete').onclick = function() {
+	document.getElementById('modal').classList.toggle('active');
+ }
+
+</script>
+
+</body>
+</html>
