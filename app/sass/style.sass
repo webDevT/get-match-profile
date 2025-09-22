@@ -174,6 +174,7 @@ swiper-slide
     font-size: 18px 
     font-weight: 600
     margin-bottom: 4px
+    max-width: 90%
 //end profile content style
 
 //start footer style
@@ -310,7 +311,7 @@ label
         border: none
     .modal-title
         margin-bottom: 30px
-        color: var(--tg-theme-text-color)
+        color: #0e0b07
 .modal-title 
     font-size: 28px 
     font-weight: 700
@@ -318,6 +319,7 @@ label
 .button--red 
     background: #EC305D
     color: #fff
+    background: linear-gradient(135.19deg, #EB2852 15.85%, #EB2852 92.58%), 
 .modal.active 
     display: block
 .textarea 
@@ -326,6 +328,10 @@ label
     outline: none
     font-family: 'DM Sans', sans-serif
     font-size: 18px
+    background: #1a140d
+    color: #fff
+.questions-list .questions-item:first-of-type 
+    padding-top: 0
 //end modal style 
 .photo-list
     display: flex 
@@ -344,25 +350,27 @@ label
 .photo-section
     padding-left: 14px 
     padding-right: 14px
+    margin-top: 25px
 .photo-wrapper
     flex-wrap: wrap
     display: flex
+    justify-content: center
 .photo-item
-    width: 205px
-    height: 205px
-    border: 1px solid red
+    width: 29vw
+    height: 29vw
     margin: 5px
-    background: #f8f7ff
+    background: #2B231A
     border: none 
     border-radius: 10px
     display: flex 
     justify-content: center 
     align-items: center
     position: relative
+    border: 1px solid rgba(#fff, 0.1)
 
 .photo-item--big
-    width: 420px 
-    height: 420px 
+    width: 58.7vw 
+    height: 58.7vw
 .photo-item__wrap
     .photo-item 
         margin-bottom: 10px
@@ -380,9 +388,7 @@ label
     position: relative
     z-index: 9
 .plus-photo
-    width: 50px
-    border: 2px solid #017DF8
-    padding: 10px
+    width: 20px
     border-radius: 50%
 .delete-photo-item 
     position: absolute
@@ -391,9 +397,9 @@ label
     z-index: 10 
     justify-content: center 
     align-items: center
-    padding: 5px 5px
-    bottom: 5px 
-    right: 5px
+    padding: 12px 12px
+    top: 0vw 
+    left: 0vw
     cursor: pointer
     display: none
     img 
@@ -401,15 +407,21 @@ label
         top: 1px
 .delete-photo-item__wrapper
     background: linear-gradient(180deg, #8A14F5 23.57%, #017DF8)
+    background: linear-gradient(135.19deg, #FF3720 15.85%, #EB2852 92.58%), #FFFFFF
     border-radius: 5px
     padding: 3.5px 8px
+    width: 30px 
+    height: 30px 
+    border-radius: 50%
+    display: flex 
+    justify-content: center 
+    align-items: center
     img 
         height: 14px
 .delete-photo-item--big
     border-radius: 10px
     .delete-photo-item__wrapper
         padding: 7px 10px
-        border-radius: 10px
         img 
             height: 20px
 
@@ -435,12 +447,15 @@ label
     display: flex 
     justify-content: center
     align-items: center
-    margin-top: 100px
+    margin-top: 0px
+    margin-top: -100px 
+    transform: translateY(50%)
     .photo-plus-wrapper
         label
             background: transparent
     .profile-photo
         margin-top: 0
+        transform: translateY(0%)
 .add-video-button
     width: 97%
     margin-left: auto 
@@ -466,7 +481,7 @@ label
 .main-photo__footer
     position: absolute 
     bottom: 10px 
-    left: 50% 
+    left: 82% 
     transform: translateX(-50%)
     z-index: 99
 .main-photo__footer
@@ -525,12 +540,12 @@ swiper-slide
         width: 100% 
         height: 100%
 .main-photo__footer
-    background: linear-gradient(180deg, #8A14F5 23.57%, #017DF8)
+    background: linear-gradient(135.19deg, #FF3720 15.85%, #EB2852 92.58%), #FFFFFF
     display: flex
     justify-content: center 
     align-items: center
-    height: 35px 
-    width: 35px
+    height: 30px 
+    width: 30px
     border-radius: 50%
     img 
         margin-left: 0 
@@ -554,7 +569,7 @@ swiper-slide
 .spinner
     width: 50px
     height: 50px
-    border: 2px solid #017DF8
+    border: 2px solid #F52F39
     border-top: 2px solid #f8f7ff
     border-radius: 50%
     animation: spin 1s linear infinite
@@ -860,6 +875,43 @@ swiper-slide
 .answer
     font-size: 18px 
     font-weight: 800
+    max-width: 90%
+.photo-section
+    background: #1A140D
+    padding: 16px
+    border-radius: 8px
+    border: 1px solid rgba(#FFFFFF, .1)
+    justify-content: center
+    padding-left: 0 
+    padding-right: 0
+    padding-top: 0
+    .button--blue 
+        margin-top: 0 
+        margin-bottom: 0
+        background: linear-gradient(135.19deg, #FF3720 15.85%, #EB2852 92.58%)
+        border-radius: 10px
+        font-size: 18px 
+        font-weight: 900
+        text-transform: uppercase
+        width: calc(100% - 6vw)
+        height: 46px
+.profile-content.profile-content--answer
+    padding-top: 30px
+    .button
+        color: #fff
+    .button.button--blue
+        background: linear-gradient(135.19deg, #FF3720 15.85%, #EB2852 92.58%)
+        text-decoration: none
+        height: 46px 
+        width: 120px
+        display: flex 
+        justify-content: center 
+        align-items: center 
+        border-radius: 50px
+.photo-section
+    margin-left: 24px
+    margin-right: 24px
+
 @import "media"
 
 
